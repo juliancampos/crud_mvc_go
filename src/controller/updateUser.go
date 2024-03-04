@@ -1,5 +1,11 @@
 package controller
 
-import "github.com/gin-gonic/gin"
+import (
+	"github.com/gin-gonic/gin"
+	"github.com/juliancampos/crud_mvc_go/src/configuration/logger"
+	"go.uber.org/zap"
+)
 
-func UpdateUser(c *gin.Context) {}
+func (uc *userControllerInterface) UpdateUser(c *gin.Context) {
+	logger.Info("Update User - NOT IMPLEMENTED", zap.String("journey", "updateUser"))
+}
